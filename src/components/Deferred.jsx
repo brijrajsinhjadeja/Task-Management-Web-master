@@ -10,7 +10,7 @@ const Deferred = () => {
   return (
       <div className="w-[70%] mx-auto">
           <div className="mt-10">
-              <h1 className="text-3xl font-bold my-8 text-center">Deferred Tasks</h1>
+              <h1 className="text-3xl font-bold my-8 bg-gradient-to-r from-orange-500 to-red-800 text-transparent bg-clip-text text-center">Deferred Tasks</h1>
           </div>
           {
               completedTasks.length > 0 ? (
@@ -29,7 +29,7 @@ const Deferred = () => {
                       ))}
                   </div>
               ) : (<div className="text-center mt-[17vh] sm:mt-[30vh]">
-                  <p>No tasks found. <Link to="/addTask" className="text-indigo-500">Add a new task</Link></p>
+                  <p>No tasks found. <Link to="/addTask" className="bg-gradient-to-r from-orange-500 to-red-800 text-transparent bg-clip-text">Add a new task</Link></p>
               </div >)
           }
       </div>

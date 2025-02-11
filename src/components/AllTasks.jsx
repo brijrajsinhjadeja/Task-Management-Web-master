@@ -28,28 +28,28 @@ const AllTasks = () => {
     return (
         <div className="w-[70%] mx-auto">
             <div className="mt-10">
-                <h1 className="text-2xl sm:text-4xl lg:text-5xl text-center bg-gradient-to-r from-orange-500 to-red-800 text-transparent bg-clip-text">Task Board</h1>
+                <h1 className="text-2xl sm:text-4xl lg:text-5xl bg-gradient-to-r from-orange-500 to-red-800 text-transparent bg-clip-text text-center ">Task Board</h1>
                 <div className="flex justify-between items-center">
-                    <div onClick={() => { settoggle(!toggle) }} className="flex justify-center items-center p-2 bg-indigo-500 rounded-xl">
+                    <div onClick={() => { settoggle(!toggle) }} className="flex justify-center items-center p-2 bg-500 rounded-xl">
                         {toggle ? (<IoClose className="text-xl text-white" />) : (<IoFilterSharp className="text-xl text-white" />)}
 
 
                     </div>
-                    <div className="text-indigo-500 font-semibold">All Task ({filteredTasks.length})</div>
+                    <div className="text-500 font-semibold">All Task ( ' {filteredTasks.length} ' )</div>
                 </div>
                 <div className={`${toggle ? 'flex' : 'hidden'} mt-10 justify-between items-center sm:flex-row gap-4 flex-col-reverse`}>
                     <div className="flex  flex-col sm:flex-row gap-2">
                         <div className="flex  flex-col sm:flex-row gap-2 items-center">
-                            <p className="font-bold text-xl text-indigo-500">Filter </p>
+                            <p className="font-bold text-xl text-500">Filter </p>
                             <div className="flex justify-center gap-[10px] sm:gap-2 flex-col sm:flex-row items-center">
                                 <input
-                                    className="bg-gray-200 p-2 rounded-xl w-[60vw] sm:w-auto appearance-none"
+                                    className="bg-200 p-2 rounded-xl w-[60vw] sm:w-auto appearance-none"
                                     type="date"
                                     value={startDate ? startDate.toISOString().split("T")[0] : ""}
                                     onChange={(e) => setStartDate(new Date(e.target.value))}
                                 />
                                 <input
-                                    className="bg-gray-200 p-2 rounded-xl w-[60vw] sm:w-auto appearance-none"
+                                    className="bg-200 p-2 rounded-xl w-[60vw] sm:w-auto appearance-none"
                                     type="date"
                                     value={endDate ? endDate.toISOString().split("T")[0] : ""}
                                     onChange={(e) => setEndDate(new Date(e.target.value))}
@@ -58,10 +58,10 @@ const AllTasks = () => {
                         </div>
                     </div>
                     <div className="flex gap-2 flex-col sm:flex-row items-center">
-                        <p className="font-bold text-xl text-indigo-400">Sort </p>
+                        <p className="font-bold text-xl text-400">Sort </p>
                         <div className="flex justify-center gap-[10px] sm:gap-3 flex-row items-center">
                             <select
-                                className="bg-gray-200 p-2 rounded-xl"
+                                className="bg-200 p-2 rounded-xl"
                                 value={statusFilter}
                                 onChange={(e) => setStatusFilter(e.target.value)}
                             >
@@ -73,7 +73,7 @@ const AllTasks = () => {
                                 <option value="Deferred">Deferred</option>
                             </select>
                             <select
-                                className="bg-gray-200 p-2 rounded-xl"
+                                className="bg-200 p-2 rounded-xl"
                                 value={priorityFilter}
                                 onChange={(e) => setPriorityFilter(e.target.value)}
                             >
@@ -106,7 +106,7 @@ const AllTasks = () => {
                 <div className="text-center mt-[17vh] sm:mt-[30vh]">
                     <p>
                         No tasks found.{" "}
-                        <Link to="/addTask" className="text-indigo-500">
+                        <Link to="/addTask" className="bg-gradient-to-r from-orange-500 to-red-800 text-transparent bg-clip-text">
                             Add a new task
                         </Link>
                     </p>

@@ -64,7 +64,7 @@ const Dashboard = () => {
         <div className="mx-auto w-[80%]">
             {/* <Sidebar /> */}
             <div className="flex flex-col w-full justify-between" >
-                <h1 className="sm:text-2xl text-3xl font-bold my-8 text-center">Tasks</h1>
+                <h1 className="sm:text-2xl text-3xl font-bold bg-gradient-to-r from-orange-500 to-red-800 text-transparent bg-clip-text my-8 text-center">Tasks</h1>
                 <div className="h-full w-80% mx-auto py-4 px-10">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-5 place-item-center">
                         {stats.map(({ label, total, bg }, index) => (

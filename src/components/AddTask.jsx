@@ -66,16 +66,16 @@ const AddTask = () => {
     return (
         <div className="w-[70%] mx-auto">
             <div className=''>
-                <h1 className="text-3xl font-bold my-8 text-center">Add New Task</h1>
+                <h1 className="text-3xl font-bold my-8 bg-gradient-to-r from-orange-500 to-red-800 text-transparent bg-clip-text text-center">Add New Task</h1>
                 <div className='grid place-items-center'>
                     <form className="w-full mt-12 sm:mt-0 max-w-lg" onSubmit={handleSubmit}>
                         <div className="flex flex-wrap -mx-3 mb-2 sm:mb-6">
                             <div className="w-full px-3 mb-6 md:mb-0">
-                                <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="title">
+                                <label className="block uppercase tracking-wide text-500 h-100 w-100 text-xs font-bold mb-2" htmlFor="title">
                                     Title
                                 </label>
                                 <input
-                                    className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    className="appearance-none block w-full bg- -200 text- -700 border border- -200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-500 focus:border- -500"
                                     id="title"
                                     type="text"
                                     placeholder="Task Title"
@@ -87,11 +87,11 @@ const AddTask = () => {
                         </div>
                         <div className="flex flex-wrap -mx-3 mb-2 sm:mb-6">
                             <div className="w-full px-3">
-                                <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="description">
+                                <label className="block uppercase tracking-wide text- -700 text-xs font-bold mb-2" htmlFor="description">
                                     Description
                                 </label>
                                 <textarea
-                                    className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    className="appearance-none block w-full bg- -200 text- -700 border border- -200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-500 focus:border- -500"
                                     id="description"
                                     placeholder="Task Description"
                                     name="description"
@@ -102,35 +102,35 @@ const AddTask = () => {
                         </div>
                         <div className="flex flex-wrap -mx-3 mb-2 sm:mb-6">
                             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                                <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="startDate">
+                                <label className="block uppercase tracking-wide text- -700 text-xs font-bold mb-2" htmlFor="startDate">
                                     Start Date
                                 </label>
                                 <DatePicker
                                     selected={formData.startDate}
                                     onChange={handleStartDateChange}
                                     dateFormat="dd/MM/yyyy"
-                                    className="appearance-none block w-[280px] sm:w-[245px] bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    className="appearance-none block w-[280px] sm:w-[245px] bg- -200 text- -700 border border- -200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-500 focus:border- -500"
                                 />
                             </div>
                             <div className="w-full md:w-1/2 px-3 mb-2 sm:mb-6 md:mb-0">
-                                <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="endDate">
+                                <label className="block uppercase tracking-wide text- -700 text-xs font-bold mb-2" htmlFor="endDate">
                                     End Date
                                 </label>
                                 <DatePicker
                                     selected={formData.endDate}
                                     onChange={handleEndDateChange}
                                     dateFormat="dd/MM/yyyy"
-                                    className="appearance-none block w-[280px] sm:w-[245px] bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    className="appearance-none block w-[280px] sm:w-[245px] bg- -200 text- -700 border border- -200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-500 focus:border- -500"
                                 />
                             </div>
                         </div>
                         <div className="flex flex-wrap -mx-3 mb-2 sm:mb-6">
                             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                                <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="status">
+                                <label className="block uppercase tracking-wide text- -700 text-xs font-bold mb-2" htmlFor="status">
                                     Status
                                 </label>
                                 <select
-                                    className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    className="block appearance-none w-full bg- -200 border border- -200 text- -700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-gray-500 focus:border-white-500"
                                     id="status"
                                     name="status"
                                     value={formData.status}
@@ -144,11 +144,11 @@ const AddTask = () => {
                                 </select>
                             </div>
                             <div className="w-full md:w-1/2 px-3">
-                                <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="priority">
+                                <label className="block uppercase tracking-wide text- -700 text-xs font-bold mb-2" htmlFor="priority">
                                     Priority
                                 </label>
                                 <select
-                                    className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    className="block appearance-none w-full bg- -200 border border- -200 text- -700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-gray-500 focus:border- -500"
                                     id="priority"
                                     name="priority"
                                     value={formData.priority}
@@ -160,7 +160,7 @@ const AddTask = () => {
                                 </select>
                             </div>
                         </div>
-                        <button type='submit' className='mt-8 w-full p-3 bg-indigo-500 rounded-lg text-center text-white hover:bg-indigo-300'>Add</button>
+                        <button type='submit' className='mt-4 w-full p-2 bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3 rounded-md'>Add</button>
                     </form>
                 </div>
             </div>

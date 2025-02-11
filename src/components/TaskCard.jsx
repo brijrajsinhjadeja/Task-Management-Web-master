@@ -4,16 +4,9 @@ import { useDispatch } from 'react-redux';
 import { toggleTaskCompleted } from '../store/taskSlice'
 import { useState } from "react";
 
-const TaskCard = ({
-    id,
-    title,
-    description,
-    startDate,
-    endDate,
-    status,
-    assignee,
-    priority,
-}) => {
+function TaskCard({
+    id, title, description, startDate, endDate, status, assignee, priority,
+}) {
     const [complete, setComplete] = useState(false);
     const dispatch = useDispatch();
     const getDate = (dateString) => {
@@ -42,12 +35,12 @@ const TaskCard = ({
 
     const handleToggleCompleted = () => {
         dispatch(toggleTaskCompleted(id));
-        setComplete(true)
+        setComplete(true);
     };
 
     return (
         <div
-            className={` flex flex-col rounded-xl justify-center gap-4 bg-white w-72 max-h-[370px] shadow-xl border`}
+            className={` flex flex-col rounded-xl justify-center gap-4 bg-gray-400 w-72 max-h-[370px] shadow-xl border`}
         >
 
             <div
@@ -72,19 +65,17 @@ const TaskCard = ({
                 </div>
             </div>
             <div className="footer p-3 flex items-center justify-between">
-                <p className="font-light text-xs block text-black">{`jadeja B`}</p>
                 <button
                     onClick={handleToggleCompleted}
                     type="button"
                     className={`flex items-center justify-center gap-2 text-black  select-none focus:outline-none shadow-md  uppercase font-bold text-xs py-2 px-6 rounded-lg ${complete
                         ? 'bg-green-200 text-green-800'
-                        : `${getStatusColor(status)}`
-                        }`}
+                        : `${getStatusColor(status)}`}`}
                 > {complete ? 'Completed' : `${status}`}</button>
             </div>
         </div>
     );
-};
+}
 
 
 TaskCard.propTypes = {
