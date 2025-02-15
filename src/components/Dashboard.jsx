@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom';
 const Card = ({ label, count, bg }) => {
     return (
         <Link to='/allTask'>
-            <div className="w-full h-32 bg-white p-5 shadow-md rounded-md flex items-center justify-between cursor-pointer">
-                <div className="h-full flex flex-1 flex-col justify-between">
-                    <p className="text-base text-gray-600">{label}</p>
+            <div className="w-full h-35 bg-orange p-5 shadow-md rounded-md flex items-center justify-between cursor-pointer">
+                <div className="h-full flex flex-2 flex-col justify-between">
+                    <p className="text-base text--600">{label}</p>
                     <span className="text-2xl font-semibold">{count}</span>
                     <span className="text-sm text-gray-400">{"110 last month"}</span>
                 </div>

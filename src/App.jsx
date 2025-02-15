@@ -11,6 +11,7 @@ import Dashboard from './components/Dashboard';
 import PendingTask from './components/PendingTask';
 import Deployed from './components/Deployed';
 import Deferred from './components/Deferred';
+import Contact from './components/Contact';
 import './App.css'
 
 
@@ -30,9 +31,10 @@ const App = () => {
         <Route path="/deferredTask" element={<Deferred />} />
         <Route path="/inProgressTask" element={<InProgressTask />} />
         <Route path="/statsTask" element={<Dashboard />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
-    </div>
-
+    
+</div>
   );
 };
 
