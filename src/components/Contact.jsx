@@ -39,15 +39,15 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex items-center justify-center  min-h-screen bg-orange-100">
-      <div className="bg-white p-8 rounded-2xl shadow-lg w-full  max-w-md border-4 border-orange-500">
-        <h2 className="text-3xl font-bold mb-6 text-center text-red-600">Contact Us</h2>
+    <div className="flex items-center  justify-center w-[70%] mx-auto  min-h-screen bg-dark-100">
+      <div className="bg-dark p-8 rounded-2xl shadow-lg w-full  max-w-md border-4 border-orange-400 to-red-400">
+        <h2 className="text-3xl font-bold my-8 bg-gradient-to-r from-orange-500 to-red-800 text-transparent bg-clip-text text-center">Contact Us</h2>
 
         {status && <p className="text-center font-semibold text-green-700">{status}</p>}
 
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-4 bg-dark">
           <div>
-            <label className="block text-sm font-medium text-red-600">Your Name</label>
+            <label className="text-1xl font-bold my-8 bg-gradient-to-r from-orange-500 to-red-800 text-transparent bg-clip-text text-center ">Your Name</label>
             <input
               type="text"
               name="name"
@@ -59,7 +59,7 @@ const ContactForm = () => {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-red-600">Your Email</label>
+            <label className="text-1xl font-bold my-8 bg-gradient-to-r from-orange-500 to-red-800 text-transparent bg-clip-text text-center">Your Email</label>
             <input
               type="email"
               name="email"
@@ -71,7 +71,7 @@ const ContactForm = () => {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-red-600">Your Message</label>
+            <label className="text-1xl font-bold my-8 bg-gradient-to-r from-orange-500 to-red-800 text-transparent bg-clip-text text-center">Your Message</label>
             <textarea
               name="message"
               value={formData.message}
@@ -84,7 +84,7 @@ const ContactForm = () => {
 
           <button
             type="submit"
-            className="w-full bg-orange-600 text-white p-3 rounded-md hover:bg-red-600 transition duration-300 font-bold"
+            className="w-full bg-orange-600 text-white p-3 rounded-md hover:bg-red-600 transition duration-300 "
           >
             Send Message
           </button>

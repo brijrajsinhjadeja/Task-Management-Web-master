@@ -2,10 +2,13 @@ import { GrTask } from "react-icons/gr";
 import { MdDashboard, MdLogin, MdOutlineTaskAlt, MdAddTask, MdPendingActions, MdCloudDone, MdOutlineAccessTimeFilled, MdQueryStats } from "react-icons/md";
 import { GrInProgress } from "react-icons/gr";
 import { Link } from "react-router-dom";
+import { useAuth0 } from "@auth0/auth0-react";
+
 import Footer from "./Footer";
 
 
 const Sidebar = () => {
+    
     return (
        <div className="sticky top-0 z-50 py-3 backdrop-blur-lg  border-b border-neutral-750/80">
             <div className="flex items-center gap-2 justify-center h-16 text-white hover:text-orange-500 text-2xl font-bold mt-6">
@@ -81,7 +84,7 @@ const Sidebar = () => {
 
                         </span>
                     </Link>
-                    <Link to='/' className="px-6 py-4 font-semibold text-lg text-gray-300 hover:text-orange-500 cursor-pointer flex justify-start items-center gap-2">
+                    <Link to='/login' className="px-6 py-4 font-semibold text-lg text-gray-300 hover:text-orange-500 cursor-pointer flex justify-start items-center gap-2">
                     <MdLogin className="text-2xl" />
                         <span className='sm:block hidden bg-gradient-to-r from-orange-500 to-red-800 text-transparent bg-clip-text'>
                             Log - In

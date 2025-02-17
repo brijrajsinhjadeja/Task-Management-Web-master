@@ -12,6 +12,7 @@ import PendingTask from './components/PendingTask';
 import Deployed from './components/Deployed';
 import Deferred from './components/Deferred';
 import Contact from './components/Contact';
+import Login from './components/Login';
 import './App.css'
 
 
@@ -32,6 +33,7 @@ const App = () => {
         <Route path="/inProgressTask" element={<InProgressTask />} />
         <Route path="/statsTask" element={<Dashboard />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/login" element={<Login/>}/>
       </Routes>
     
 </div>
