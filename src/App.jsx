@@ -1,6 +1,7 @@
 
 
 import { Route, Routes } from 'react-router-dom'
+
 import './index.css'
 import AddTask from './components/AddTask';
 import Sidebar from './components/Sidebar';
@@ -13,6 +14,7 @@ import Deployed from './components/Deployed';
 import Deferred from './components/Deferred';
 import Contact from './components/Contact';
 import Login from './components/Login';
+import Footer from './components/Footer';
 import './App.css'
 
 
@@ -35,7 +37,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login/>}/>
       </Routes>
-    
+      <Footer/>
 </div>
   );
 };

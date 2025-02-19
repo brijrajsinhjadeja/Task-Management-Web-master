@@ -2,9 +2,7 @@ import { GrTask } from "react-icons/gr";
 import { MdDashboard, MdLogin, MdOutlineTaskAlt, MdAddTask, MdPendingActions, MdCloudDone, MdOutlineAccessTimeFilled, MdQueryStats } from "react-icons/md";
 import { GrInProgress } from "react-icons/gr";
 import { Link } from "react-router-dom";
-import { useAuth0 } from "@auth0/auth0-react";
 
-import Footer from "./Footer";
 
 
 const Sidebar = () => {
@@ -90,7 +88,6 @@ const Sidebar = () => {
                             Log - In
                         </span>
                     </Link>
-                  <Footer/>
                 </ul>
                 
             </nav>

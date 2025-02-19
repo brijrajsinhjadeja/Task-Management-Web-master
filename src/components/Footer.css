@@ -1,0 +1,29 @@
+/* Footer Container */
+.footer {
+   width: 100%;
+   background-color: #1a1a1a; /* Dark background for contrast */
+   color: #ecf0f1; /* Light text for visibility */
+   text-align: center;
+   padding: 20px 10px;
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+   font-size: 1rem;
+ }
+ 
+ /* Footer Content */
+ .footer-content p {
+   margin: 5px 0;
+ }
+ 
+ .footer-content a {
+   color: #f58f1a; /* Highlight links with green */
+   text-decoration: none;
+   transition: color 0.3s ease;
+ }
+ 
+ .footer-content a:hover {
+   color: #81c784; /* Lighter green on hover */
+ }
+ 

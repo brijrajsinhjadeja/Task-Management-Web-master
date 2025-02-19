@@ -1,5 +1,4 @@
-
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import { useDispatch } from 'react-redux';
 import { toggleTaskCompleted } from '../store/taskSlice'
 import { useState } from "react";
@@ -79,14 +78,7 @@ function TaskCard({
 
 
 TaskCard.propTypes = {
-    id: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    startDate: PropTypes.string.isRequired,
-    endDate: PropTypes.string.isRequired,
-    status: PropTypes.string.isRequired,
-    assignee: PropTypes.string,
-    priority: PropTypes.string,
+    id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+       
 };
-
 export default TaskCard;

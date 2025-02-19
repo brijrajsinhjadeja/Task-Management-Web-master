@@ -13,9 +13,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Auth0Provider
     domain="dev-gq83xn4ckoc2ps1p.us.auth0.com"
     clientId="lyUVVXplPXTwlsN1D8EZlIXo3V9rJHzY"
-    authorizationParams={{
-      redirect_uri: window.location.origin
-    }}
+    authorizationParams={{redirect_uri: window.location.origin}}
+    cacheLocation="localstorage" // Ensure session persistence
+
   >
 
       <App />
